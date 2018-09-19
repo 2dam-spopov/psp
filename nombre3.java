@@ -8,7 +8,7 @@ public class nombre3{
 	FileWriter fichero = null;
 	PrintWriter pw = null;
 try {
-	fichero =new FileWriter("FicheroNombre.txt");
+	fichero =new FileWriter("FicheroNombreHolaMundo.txt");
 	pw=new PrintWriter(fichero);
 	for(int i=0;i<21;i++){
 	System.out.println("Hola "+nombre);
