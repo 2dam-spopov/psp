@@ -10,7 +10,9 @@ public class RunProcess {
 		}
 		ProcessBuilder pb = new ProcessBuilder(args);
 		try {
+			//Ejecuta el proceso
 			Process process = pb.start();
+			//El waitFor() espera a que el proceso termine
 			int retorno = process.waitFor();
 			System.out.println("La ejecución de " + Arrays.toString(args) + " devuelve " + retorno);
 		} catch (IOException ex) {
